@@ -1,0 +1,22 @@
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(116, 116, 116);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+table thead {
+    background-color: rgb(156, 156, 189);
+}
+
+td button {
+    background-color: red;
+    color: #fff;
+    border: 3px solid black;
+    cursor: pointer;
+}
