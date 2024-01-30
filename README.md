@@ -41,7 +41,7 @@ c. Configuración del Pipeline:
 En la sección de definición del pipeline, utiliza un script similar al proporcionado en la guía anterior.
 
 4. Configuración de Despliegue Continuo:
-5. 
+   
 a. Instalar Plugin para Despliegue:
 
 En Jenkins, ve a "Manage Jenkins" -> "Manage Plugins".
