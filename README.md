@@ -18,15 +18,26 @@ Sustituye (nombre de tu contenedor) con el ID o nombre de tu contenedor.
 Copia la contraseña generada y pégala en la interfaz web de Jenkins.
 
 2. Configuración de un Proyecto en Jenkins:
+
 a. Crear un Nuevo Proyecto Pipeline:
+
 En la interfaz de Jenkins, haz clic en "New Item".
+
 Selecciona "Pipeline" y da un nombre al proyecto.
+
 b. Configuración del Origen del Código Fuente:
+
 En la sección de configuración del proyecto, ve a "Pipeline" y selecciona "Pipeline script from SCM".
+
+
 Elige "Git" como SCM.
+
 Ingresa la URL del repositorio Git (por ejemplo, el repositorio de GitHub).
+
 Configura las credenciales para acceder al repositorio.
+
 c. Configuración del Pipeline:
+
 En la sección de definición del pipeline, utiliza un script similar al proporcionado en la guía anterior.
 
 4. Configuración de Despliegue Continuo:
