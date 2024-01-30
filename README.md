@@ -1,24 +1,19 @@
-Guía de Instalación y Configuración de Jenkins para CI/CD
-Esta guía proporciona instrucciones detalladas para instalar y configurar Jenkins, así como para establecer un proceso de Integración Continua y Despliegue Continuo (CI/CD) en un entorno de desarrollo. Este tutorial se centra en la utilización de Docker para la instalación y configuración inicial.
+Guía de Instalación y Configuración de Jenkins para CI/CD:
 
 1. Instalación de Jenkins:
 a. Instalación y Configuración con Docker:
-Asegúrate de tener Docker instalado en tu máquina. Si no lo tienes, sigue las instrucciones de instalación para tu sistema operativo en https://docs.docker.com/get-docker/.
+Asegúrate de tener Docker instalado.
 
 Ejecuta el siguiente comando en tu terminal para instalar y configurar Jenkins a través de Docker:
 
-bash
-Copy code
 docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
-Accede a Jenkins a través de tu navegador web ingresando a http://localhost:8080.
+Accede a Jenkins a través de tu navegador web ingresando a http://localhost:8080, o el puerto que le hayas indicado
 
 b. Desbloqueo Inicial:
 Durante la instalación, recupera la contraseña inicial ejecutando el siguiente comando:
 
-bash
-Copy code
-docker exec -it <nombre_del_contenedor> cat /var/jenkins_home/secrets/initialAdminPassword
-Sustituye <nombre_del_contenedor> con el ID o nombre de tu contenedor.
+docker exec -it (nombre de tu contenedor) cat /var/jenkins_home/secrets/initialAdminPassword
+Sustituye (nombre de tu contenedor) con el ID o nombre de tu contenedor.
 
 Copia la contraseña generada y pégala en la interfaz web de Jenkins.
 
