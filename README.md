@@ -28,9 +28,15 @@ Ingresa la URL del repositorio Git (por ejemplo, el repositorio de GitHub).
 Configura las credenciales para acceder al repositorio.
 c. Configuración del Pipeline:
 En la sección de definición del pipeline, utiliza un script similar al proporcionado en la guía anterior.
-3. Configuración de Despliegue Continuo:
+
+4. Configuración de Despliegue Continuo:
+5. 
 a. Instalar Plugin para Despliegue:
+
 En Jenkins, ve a "Manage Jenkins" -> "Manage Plugins".
+
 En la pestaña "Available", busca y selecciona el plugin necesario para tu entorno de despliegue (por ejemplo, AWS).
+
 b. Configuración de Credenciales:
+
 Ve a "Manage Jenkins" -> "Manage Credentials" y agrega las credenciales necesarias para el entorno de despliegue.
